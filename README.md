@@ -25,8 +25,8 @@ project/
 ├── README.md
 ├── run_train_and_predict.ipynb
 ├── train.py
-├── vihallu-public-test.csv
-└── vihallu-train.csv
+├── vihallu-public-test.csv (not provided)
+└── vihallu-train.csv (not provided)
 ```
 ---
 
