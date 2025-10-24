@@ -10,6 +10,7 @@ Our methodology is based on a **2-level stacking ensemble**, which combines the 
 
 The repository is organized as follows:
 
+```bash
 project/
 ├── old/
 ├── src/
