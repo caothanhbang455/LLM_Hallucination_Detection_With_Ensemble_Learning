@@ -88,3 +88,34 @@ Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 2. Training and Prediction
+
+The entire pipeline — training base models, training the stacker, and generating predictions on the test set — can be executed using:
+
+```bash
+python run_train_and_predict.py --mode train_then_predict
+```
+
+### Validation results (Base models)
+
+Performance of individual models on the **local validation set** (macro F1 and Recall):
+
+| Model | Method | F1 (val) | Recall (val) |
+|:------|:--------|:----------:|:--------------:|
+| multilingual-MiniLMv2 | Fine-tuning | 0.xx | 0.xx |
+| mDeBERTa-v3-base | Fine-tuning | 0.xx | 0.xx |
+| multilingual-e5-base | Fine-tuning | 0.xx | 0.xx |
+
+> *Note:* Scores are averaged across K-Fold cross-validation splits.
+
+---
+
+### Final ensemble results
+
+Performance of the **final stacked ensemble** on the private leaderboard:
+
+| Model | Method | F1 (private) | Recall (private) |
+|:------|:--------|:--------------:|:----------------:|
+| LLMS_1% | Stacking (3 models) | 0.xx | 0.xx |
