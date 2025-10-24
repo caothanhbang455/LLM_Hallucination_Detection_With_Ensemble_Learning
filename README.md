@@ -27,7 +27,7 @@ project/
 ├── train.py
 ├── vihallu-public-test.csv
 └── vihallu-train.csv
-
+```
 ---
 
 ## Methodology
