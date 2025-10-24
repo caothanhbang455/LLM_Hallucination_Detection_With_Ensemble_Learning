@@ -10,13 +10,22 @@ Our methodology is based on a **2-level stacking ensemble**, which combines the 
 
 The repository is organized as follows:
 
-- **config.py**: Contains all hyperparameters, file paths, and model configurations.  
-- **data.py**: Defines the `HalluDataset` class, which handles data loading, tokenization, and the sliding window mechanism.  
-- **modeling.py**: Defines the `HalluModel` architecture, which consists of a transformer encoder and a custom classification head.  
-- **fold_train.py**: Main script for training the level-1 base models and the level-2 stacking model.  
-- **ensemble.py**: Script for running inference using the saved ensemble pipeline.  
-- **calibration.py**: Implements temperature scaling for model probability calibration.  
-- **run_train_and_predict.ipynb**: A Jupyter notebook to execute the end-to-end training and prediction pipeline.
+project/
+├── old/
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── model.py
+│   ├── preprocess.py
+│   ├── train_utils.py
+│   └── predict_utils.py
+├── vncorenlp/
+│   └── (thư mục chứa file jar và resource của vncorenlp)
+├── README.md
+├── run_train_and_predict.ipynb
+├── train.py
+├── vihallu-public-test.csv
+└── vihallu-train.csv
 
 ---
 
